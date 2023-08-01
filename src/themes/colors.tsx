@@ -1,0 +1,7 @@
+export const RED = "#FF3131"
+export const WHITE = "#ffff"
+export const PURPLE = "#a200ff"
+export const LIGHT_PURPLE = "#fbf5ff"
+export const DARK_PURPLE = "#7904bd"
+export const GREEN = "#1cb879"
+export const BLACK = "#000000"
