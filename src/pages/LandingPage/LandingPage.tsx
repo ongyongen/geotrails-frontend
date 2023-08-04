@@ -5,7 +5,6 @@ import { Header } from "../../components/Header/Header"
 import { Title, Subtitle } from "../../themes/textStyles"
 import { useNavigate } from "react-router-dom"
 import { INoInputComponent } from "../../interfaces/common"
-import { Counter } from "../../Counter"
 
 // Text for landing page
 const LANDING_PAGE_TITLE = "Geotrails 🌎"
@@ -14,7 +13,7 @@ const VIEW_GEOCACHE_BUTTON = "View all geocaches"
 const SIGN_UP_BUTTON = "Sign up"
 
 export const LandingPage: INoInputComponent = () => {
-    let navigate = useNavigate()
+    const navigate = useNavigate()
 
     return (
         <>

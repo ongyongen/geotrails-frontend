@@ -19,6 +19,8 @@ import {
 import { GeocachesMap } from './pages/GeocachesPage/GeocachesMap/GeocachesMap'
 import { Profile } from './pages/Profile/Profile'
 import { Dashboard } from './pages/Profile/Dashboard'
+import { AuthContext, AuthProvider } from './AuthProvider'
+import { useContext } from 'react'
 
 function App() {
   return (
@@ -34,7 +36,6 @@ function App() {
             <Route path={GEOCACHES_PAGE_MAP_PATH} element={<GeocachesMap/>}/>
             <Route path={USER_PROFILE_PAGE_PATH} element={<Profile/>}/>
             <Route path={USER_DASHBOARD_PATH} element={<Dashboard/>}/>
-
           </Routes>
       </BrowserRouter>
     </div>
