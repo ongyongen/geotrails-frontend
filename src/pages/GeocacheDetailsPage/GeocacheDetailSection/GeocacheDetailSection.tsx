@@ -12,6 +12,14 @@ import { MAPBOX_MAP_STYLE } from "../../../routes";
 import { useSelector } from "react-redux";
 import { Header } from "../../../components/Header/Header";
 import { CommonButton } from "../../../components/Buttons/CommonButton";
+
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
+
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 interface IGeocacheDetailSectionProps {
     code: string | undefined
 }

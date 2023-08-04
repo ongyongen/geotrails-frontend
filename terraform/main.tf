@@ -1,6 +1,6 @@
 # Create an S3 bucket
 resource "aws_s3_bucket" "geotrails_frontend" {
-  bucket = "geotrails_frontend"
+  bucket = "geotrails-frontend"
 }
 
 # Configure S3 bucket to allow allow access via cloudfront
