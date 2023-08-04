@@ -25,3 +25,5 @@ terraform/.terraform.lock.hcl
 terraform/terraform.tfstate
 terraform/terraform.tfstate.backup
 terraform/secrets.tf
+
+.github/workflows/secrets.yml
