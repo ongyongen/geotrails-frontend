@@ -1,8 +1,6 @@
 
-// Should be same domain name not the 127...
-// const BASE_URL =  "http://localhost:8000/api"
-// const BASE_URL = "http://13.214.191.138:8000/api"
-const BASE_URL = "https://load-balancer-dev-506969555.ap-southeast-1.elb.amazonaws.com/api"
+// const BASE_URL =  "http://127.0.0.1:8000/api"
+const BASE_URL = "https://load-balancer-dev-207112777.ap-southeast-1.elb.amazonaws.com/api"
 
 export const CREATE_ACCOUNT_URL = `${BASE_URL}/create_account`
 export const LOGIN_URL = `${BASE_URL}/login`

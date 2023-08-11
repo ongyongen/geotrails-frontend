@@ -1,0 +1,18 @@
+services:
+  backend:
+    image:
+      geotrails-backend
+    build:
+      context: ${PATH_TO_BACKEND_FOLDER}
+    ports:
+      - "8000:8000"
+    environment:
+      - name=value
+
+  frontend:
+    image:
+      geotrails-frontend
+    build:
+      context: ${PATH_TO_FRONTEND_FOLDER}
+    ports:
+      - "3000:3000"

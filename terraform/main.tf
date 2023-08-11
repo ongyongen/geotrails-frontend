@@ -46,7 +46,7 @@ resource "aws_s3_bucket_cors_configuration" "geotrails_frontend" {
 
   cors_rule {
     allowed_headers = ["*"]
-    allowed_methods = ["GET", "PUT", "POST"]
+    allowed_methods = ["GET", "PUT", "POST", "HEAD"]
     allowed_origins = ["*"]
     max_age_seconds = 3000
   }
@@ -101,15 +101,13 @@ resource "aws_cloudfront_distribution" "geotrails_frontend_distribution" {
     response_page_path = "/index.html"
   }
 
+  custom_error_response {
+    error_caching_min_ttl = 300
+    error_code = 404
+    response_code = 200
+    response_page_path = "/index.html"
+  }
+
   enabled = true
 
 }
-
-
-
-
-
-
-
-
-

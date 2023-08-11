@@ -52,12 +52,13 @@ export const useGeocachesTableHooks: IUseGeocachesTableHooks = () => {
         }
 
         searchString += "&page=" + current_page
-    
+        console.log(GET_ALL_GEOCACHES_MAP_URL)
         axios
         .get(GET_ALL_GEOCACHES_URL + searchString)
         .then((res) => {
             if (res.data) {
                 console.log(searchString)
+                console.log(GET_ALL_GEOCACHES_URL)
                 dispatch(updateAllGeocaches(res.data))
             }
         })
