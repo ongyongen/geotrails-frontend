@@ -1,6 +1,6 @@
 
 // const BASE_URL =  "http://127.0.0.1:8000/api"
-const BASE_URL = "https://load-balancer-dev-207112777.ap-southeast-1.elb.amazonaws.com/api"
+const BASE_URL = "https://www.geotrails.net/api"
 
 export const CREATE_ACCOUNT_URL = `${BASE_URL}/create_account`
 export const LOGIN_URL = `${BASE_URL}/login`
