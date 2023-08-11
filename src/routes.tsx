@@ -2,6 +2,7 @@
 // const BASE_URL =  "http://127.0.0.1:8000/api"
 const BASE_URL = "https://www.geotrails.net/api"
 
+
 export const CREATE_ACCOUNT_URL = `${BASE_URL}/create_account`
 export const LOGIN_URL = `${BASE_URL}/login`
 export const LOGOUT_URL = `${BASE_URL}/logout`
